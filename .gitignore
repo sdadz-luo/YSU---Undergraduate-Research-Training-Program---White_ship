@@ -1,0 +1,62 @@
+# ============================================
+# White Ship - RA6M5 UART_DMA 工程 .gitignore
+# 保留完整工程（含 FSP SDK 与生成代码），
+# 仅忽略构建产物与机器相关的 IDE 配置
+# ============================================
+
+# ========================
+# Keil MDK-ARM IDE 用户配置
+# ========================
+
+# 窗口布局、断点等用户特定设置
+*.uvguix.*
+
+# 编译选项与调试器设置
+*.uvoptx
+
+# 调试配置
+DebugConfig/
+
+# J-Link 调试器配置
+JLinkSettings.*
+*.JLinkScript
+
+# ========================
+# 编译输出
+# ========================
+Objects/
+Listings/
+*.o
+*.d
+*.dep
+*.crf
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.htm
+*.lnp
+*.rpd
+*.sbd
+*.lst
+*.iex
+*.build_log.htm
+
+# ========================
+# RASC 崩溃日志（Java 运行时）
+# ========================
+hs_err_pid*.log
+replay_pid*.log
+
+# ========================
+# 操作系统 / 编辑器
+# ========================
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
