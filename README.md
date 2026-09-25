@@ -4,6 +4,17 @@
 Renesas RA6M5（Cortex-M33）裸机开发：采集水质、温湿度与 GPS 数据，
 经 4G 回传，并按遥控指令驱动电机与灯带。
 
+## 项目组成
+
+燕山大学大创「无人船」项目由上位机遥控双船协同作业，共三个仓库：
+
+- [Black_ship][black-ship] —— 黑船固件：双模式运动控制、毫米波雷达与 4G 回传
+- **White_ship**（本仓库）—— 白船固件：水质、温湿度等多传感器采集与 4G 回传
+- [Host-Computer][host-computer] —— 上位机：串口屏与双摇杆指令，经 LoRa 转发双船
+
+[black-ship]: https://github.com/sdadz-luo/YSU---Undergraduate-Research-Training-Program---Black_ship
+[host-computer]: https://github.com/sdadz-luo/YSU---Undergraduate-Research-Training-Program---Unmanned-Ship---Host-Computer
+
 ## 硬件平台
 
 | 组件 | 接口 | 用途 |
@@ -79,13 +90,3 @@ IMU     ──┘
 - Keil MDK + ARMClang
 - Renesas FSP v6.4.0
 - Renesas RA Smart Configurator（RASC）
-
-## 相关仓库
-
-同一无人船项目的其他工程：
-
-- [Black_ship][black-ship] — 黑船固件（RA6M5）
-- [Host-Computer][host-computer] — 基于串口屏的遥控上位机
-
-[black-ship]: https://github.com/sdadz-luo/YSU---Undergraduate-Research-Training-Program---Black_ship
-[host-computer]: https://github.com/sdadz-luo/YSU---Undergraduate-Research-Training-Program---Unmanned-Ship---Host-Computer
